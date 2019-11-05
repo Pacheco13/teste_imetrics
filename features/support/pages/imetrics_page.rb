@@ -56,7 +56,7 @@ class CarreiraPage < SitePrism::Page
     end
 
     def seleciona_item_tabela(opcao, area)
-        area_trab = find('table tbody tr', text: 'Operações')
+        tab = all('table tbody tr[data-department="' + area + '"]')
         #area_trab.find('a', text: opcao).click
         
     end
